@@ -1,0 +1,48 @@
+{
+  "mdb_boards": [
+    {
+      "name": "MDB1",
+      "numtag": 1,
+      "kind": "MDB",
+      "mdb": "MDB1",
+      "smdb": null,
+      "load": 1893.42,
+      "items": 1,
+      "estimate": 259237.159335
+    },
+    {
+      "name": "MDB2",
+      "numtag": 28,
+      "kind": "MDB",
+      "mdb": "MDB2",
+      "smdb": null,
+      "load": 1975.07,
+      "items": 1,
+      "estimate": 254291.8714875
+    },
+    {
+      "name": "MDB3",
+      "numtag": 57,
+      "kind": "MDB",
+      "mdb": "MDB3",
+      "smdb": null,
+      "load": 1889.013,
+      "items": 1,
+      "estimate": 272760.666255
+    },
+    {
+      "name": "MDB4",
+      "numtag": 77,
+      "kind": "MDB",
+      "mdb": "MDB4",
+      "smdb": null,
+      "load": 1938.29,
+      "items": 1,
+      "estimate": 270088.271145
+    }
+  ],
+  "total_estimate": 1056377.9682224998,
+  "total_load": 7695.793,
+  "total_items": 4,
+  "count": 4
+}
