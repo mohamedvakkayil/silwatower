@@ -1,0 +1,1149 @@
+{
+  "name": "EDB.LL.L25.01",
+  "metadata": {
+    "kind": "DB",
+    "mdb": "MDB3",
+    "smdb": "ESMDB.LL.L06.01",
+    "load": 7.95
+  },
+  "summary": {
+    "no_of_units": 1.0,
+    "net_total": 3246.999525
+  },
+  "items": [
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ACB 2500A 4P 65kA LSIG",
+      "PRICE": 16082.717,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ACB 1600A TP 50kA LSIG",
+      "PRICE": 13265.77,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ACB 800A 4P 50kA LSIG",
+      "PRICE": 11654.244,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ACB 1250A 4P 40kA LSI",
+      "PRICE": 12582.927,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ABB",
+      "ITEM": "ELCB 100A 4P 100mA",
+      "PRICE": 250,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "RCCB 63A 4P 100mA",
+      "PRICE": 117.02,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "RCCB 63A 4P 30mA",
+      "PRICE": 131.99,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ABB",
+      "ITEM": "ELCB 40A 4P 300mA",
+      "PRICE": 115,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "RCCB 40A 4P 100mA",
+      "PRICE": 96.79,
+      "QTY": 3,
+      "AMOUNT": 290.37
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "RCCB 40A 4P 30mA",
+      "PRICE": 109.56,
+      "QTY": 6,
+      "AMOUNT": 657.36
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "RCCB 40A 2P 100mA",
+      "PRICE": 81.17,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "RCCB 40A 2P 30mA",
+      "PRICE": 96.48,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "160/4P 100mA ELCB",
+      "PRICE": 400,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "40/4P 10mA ELCB",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "32/4P 100mA ELCB",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "20/4P 100mA ELCB",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "20/SP 100mA ELCB",
+      "PRICE": 40,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "500A TP ISO",
+      "PRICE": 700,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "350A TP ISO",
+      "PRICE": 450,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ISOLATOR 400A TP",
+      "PRICE": 534.086,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ISOLATOR 300A TP",
+      "PRICE": 523.2779999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ISOLATOR 250A TP",
+      "PRICE": 523.2779999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ISOLATOR 200A TP",
+      "PRICE": 422.996,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "ISOLATOR 160A TP",
+      "PRICE": 422.996,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 125A TP",
+      "PRICE": 49.749,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 100A 4P",
+      "PRICE": 49.77,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 80A TP",
+      "PRICE": 42.49,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 63A 4P",
+      "PRICE": 43.771,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 40A 4P",
+      "PRICE": 42.49,
+      "QTY": 1,
+      "AMOUNT": 42.49
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 40A TP",
+      "PRICE": 28.77,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 40A 2P",
+      "PRICE": 23.569,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ISOLATOR 32A TPN",
+      "PRICE": 35.077,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCB (32-10)AA SP 10kA",
+      "PRICE": 12.565,
+      "QTY": 30,
+      "AMOUNT": 376.95
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCB (32-10)AA TP 10kA",
+      "PRICE": 53.536,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "MCCB 1000A TP 50kA",
+      "PRICE": 3832.703,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 800A TP 50kA",
+      "PRICE": 2178.792,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 500A TP 50kA",
+      "PRICE": 1133.797,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 400A TP 50kA",
+      "PRICE": 978.3059999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 350A TP 50kA",
+      "PRICE": 895.132,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 300A TP 50kA",
+      "PRICE": 895.8319999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 250A TP 50kA",
+      "PRICE": 528.7379999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 200A TP 50kA",
+      "PRICE": 508.3819999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 100-40A TP 50kA",
+      "PRICE": 216.377,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 400A TP 36kA",
+      "PRICE": 931.728,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 350A TP 36kA",
+      "PRICE": 852.4879999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 250A TP 36kA",
+      "PRICE": 488.075,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 250A TP 25KA",
+      "PRICE": 447.412,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 200A TP 36kA",
+      "PRICE": 467.747,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 200A TP 25KA",
+      "PRICE": 427.084,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 160A TP 36kA",
+      "PRICE": 345.821,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 160A TP 25KA",
+      "PRICE": 313.775,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 125A TP 36kA",
+      "PRICE": 231.903,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 125A TP 25kA",
+      "PRICE": 273.287,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB 100 - 20A TP 35kA",
+      "PRICE": 171.759,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB (100-40)A TP 25kA",
+      "PRICE": 161.798,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "MCCB 100 - 40A SP 25kA",
+      "PRICE": 130.403,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "ELECTRICAL AND MECHANICAL INTERLOCK WITH BASIC PLATE",
+      "PRICE": 2140,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "GLAND PLATE",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SPD",
+      "PRICE": 500,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "PMU WITH MODBUS",
+      "PRICE": 2000,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ELECTRICAL AND MECHANICAL INTERLOCK w/o BASIC PLATE",
+      "PRICE": 2140,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "CHECK METER",
+      "PRICE": 2250,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "160A 50KA TP MCCB",
+      "PRICE": 635,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ACB COVER",
+      "PRICE": 150,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ATS COMPONENTS",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "PADLOCK",
+      "PRICE": 15,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "BUSBAR",
+      "PRICE": 160,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "MPL",
+      "PRICE": 350,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SIDE COVER",
+      "PRICE": 315,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "2000*1000*800",
+      "PRICE": 1250,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "THERMOSTAT",
+      "PRICE": 30,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FILTER ",
+      "PRICE": 75,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FAN ALFA",
+      "PRICE": 395,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FUSE LINK 125A",
+      "PRICE": 10,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FUSE LINK 60A",
+      "PRICE": 10,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FUSE BASE ETI",
+      "PRICE": 35,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "50 KVAR CONTACTOR EPCOS",
+      "PRICE": 340,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "25 KVAR CONTACTOR EPCOS",
+      "PRICE": 120,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "PFR EPCOS 12STEP",
+      "PRICE": 690,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "50 KVAR REACTOR EPCOS",
+      "PRICE": 1050,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "25 KVAR REACTOR EPCOS",
+      "PRICE": 760,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "25 KVAR CAPCITOR EPCOS",
+      "PRICE": 270,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "800 TP ISO ABB",
+      "PRICE": 1010,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "125A 50AK TP MCCB",
+      "PRICE": 550,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "20-100A 50KA TP MCCB",
+      "PRICE": 345,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SIDE COVER",
+      "PRICE": 315,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "VFD 37KW",
+      "PRICE": 6155.877,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "VFD 22KW ",
+      "PRICE": 2991.94,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON1",
+      "ITEM": "VFD 55KW ",
+      "PRICE": 10372.32,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "80A 4P ISO",
+      "PRICE": 70,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "100 X 10 BB",
+      "PRICE": 53,
+      "QTY": 0,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "METERING",
+      "PRICE": 300,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ELS+ALARM",
+      "PRICE": 200,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ELR+CBCT",
+      "PRICE": 300,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "TIMER OVER RIDE",
+      "PRICE": 206,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "UVR+TIMER ",
+      "PRICE": 130,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FORM 4",
+      "PRICE": 4000,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "FORM 2B",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ACCESSORIES",
+      "PRICE": 3000,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "80*10",
+      "PRICE": 359.9999999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "60*10",
+      "PRICE": 270,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "50*10",
+      "PRICE": 225,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "45*10",
+      "PRICE": 180,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "30*10",
+      "PRICE": 135,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "25*10",
+      "PRICE": 112.5,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "20*10",
+      "PRICE": 89.99999999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "20*5",
+      "PRICE": 44.99999999999999,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "15*5",
+      "PRICE": 33.75,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "12*5",
+      "PRICE": 27,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ROTARY HANDLE 800A",
+      "PRICE": 550,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ROTARY HANDLE 400/630",
+      "PRICE": 445,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ROTARY HANDLE 160/250A",
+      "PRICE": 345,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "ROTARY HANDLE 100A",
+      "PRICE": 245,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "5.5+11KW S/D",
+      "PRICE": 400,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "DOL",
+      "PRICE": 200,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "SHUNT TRIP PROVISION",
+      "PRICE": 430.82,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1400X800X300",
+      "PRICE": 1364,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "2000x800x600",
+      "PRICE": 1350,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "2000x600x600",
+      "PRICE": 1150,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "2000X1000X600",
+      "PRICE": 1550,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1400X1200X400",
+      "PRICE": 2188,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1400X600X300",
+      "PRICE": 1142,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1200X800X300",
+      "PRICE": 660,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1200X600X300",
+      "PRICE": 772,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1000X600X300",
+      "PRICE": 593,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "1000X800X250",
+      "PRICE": 505,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "ALFANAR",
+      "ITEM": "800X600X200",
+      "PRICE": 310,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "1R 16M ",
+      "PRICE": 102,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "2R 16M ",
+      "PRICE": 125,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "3R 16M ",
+      "PRICE": 158,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "4R 16M ",
+      "PRICE": 212,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "5R 16M ",
+      "PRICE": 252,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "4R 24M ",
+      "PRICE": 372,
+      "QTY": 1,
+      "AMOUNT": 372
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "5R 24M ",
+      "PRICE": 435,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "6R 24M ",
+      "PRICE": 506,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "800A ATS",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SMDB BUSBAR",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB - NON AUTO 63A",
+      "PRICE": 274.092,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB - NON AUTO 125A",
+      "PRICE": 340.41,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB - NON AUTO 400A",
+      "PRICE": 1194.249,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": "EATON2",
+      "ITEM": "MCCB - NON AUTO 200A",
+      "PRICE": 676.081,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": null,
+      "ITEM": 0,
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 0
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "TOTAL",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 1739.17
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "LABOUR",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 135
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SUM AFTER LABOUR",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 1874.17
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "NO OF UNITS",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 1
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SUM AFTER NUMBER OF UNITS",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 1874.17
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "OVER HEAD",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 937.085
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SUM AFTER OVERHEAD",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 2811.255
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "TAX 5%",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 140.56275
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "SUM AFTER TAX",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 2951.81775
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "PROVISIONAL SUM 10%",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 295.181775
+    },
+    {
+      "BRAND": 0,
+      "ITEM": "NET TOTAL",
+      "PRICE": 0,
+      "QTY": null,
+      "AMOUNT": 3246.999525
+    }
+  ]
+}

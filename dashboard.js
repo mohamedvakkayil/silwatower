@@ -327,16 +327,47 @@ async function showBoardDetails(boardName) {
     try {
         // Try to fetch from API endpoint (if running server)
         let response;
+        let data;
+        
         try {
             response = await fetch(`/api/board-details?name=${encodeURIComponent(boardName)}`);
-            if (!response.ok) throw new Error('API not available');
-        } catch (e) {
-            // Fallback: use Python script via fetch (requires server)
-            // For file:// protocol, we'll show a message
-            throw new Error('Server not available. Please run a local server to view details.');
+            if (!response.ok) {
+                throw new Error('API not available');
+            }
+            
+            // Check if response is JSON (API response) or HTML (redirect from static hosting)
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                try {
+                    data = await response.json();
+                } catch (jsonParseError) {
+                    // If JSON parsing fails, it might be HTML from redirect
+                    throw new Error('API endpoint returned invalid response');
+                }
+            } else {
+                // Response is not JSON, likely HTML redirect from static hosting
+                throw new Error('API endpoint not available');
+            }
+        } catch (apiError) {
+            // Fallback: Try to fetch from static JSON file
+            console.warn('API fetch failed, trying JSON file:', apiError);
+            
+            // Sanitize board name for filename (replace special characters)
+            const safeName = boardName.replace(/\//g, '_').replace(/\\/g, '_').replace(/:/g, '_');
+            const jsonPath = `board_details/${safeName}.json`;
+            
+            try {
+                response = await fetch(jsonPath);
+                if (!response.ok) {
+                    throw new Error(`Board details file not found: ${jsonPath}`);
+                }
+                
+                data = await response.json();
+            } catch (jsonError) {
+                // If JSON file also fails, show error
+                throw new Error(`Unable to load board details. ${jsonError.message}`);
+            }
         }
-        
-        const data = await response.json();
         
         if (data.error) {
             throw new Error(data.error);
@@ -348,15 +379,16 @@ async function showBoardDetails(boardName) {
         content.style.display = 'block';
         
     } catch (err) {
+        console.error('Error loading board details:', err);
         loading.style.display = 'none';
         error.style.display = 'block';
         error.innerHTML = `
             <p><strong>Error loading board details:</strong></p>
             <p>${err.message}</p>
             <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-secondary);">
-                To view board details, run a local server:<br>
-                <code>python3 -m http.server 8000</code><br>
-                Then access: <code>http://localhost:8000/dashboard.html</code>
+                ${err.message.includes('not found') 
+                    ? 'The board details file is missing. Please regenerate board details JSON files.'
+                    : 'To view board details, run a local server:<br><code>python3 server.py 8000</code><br>Then access: <code>http://localhost:8000/dashboard.html</code>'}
             </p>
         `;
     }
