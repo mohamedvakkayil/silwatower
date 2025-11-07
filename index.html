@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Silwa Tower LV Panel Dashboard - Estimation Summary">
+    <title>Dashboard - Silwa Tower LV Panel | Technoplus Dubai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Technoplus Dubai</h1>
+                    <p class="logo-subtitle">Energy Department</p>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section id="dashboard" class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-title">
+                <h1>Silwa Tower LV Panel</h1>
+                <p>Estimation Dashboard</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="section">
+        <div class="container">
+            <div class="filter-section">
+                <label for="mdb-filter" class="filter-label">View Boards:</label>
+                <select id="mdb-filter" class="mdb-filter-select">
+                    <option value="all">All</option>
+                    <option value="MDB1">MDB1</option>
+                    <option value="MDB2">MDB2</option>
+                    <option value="MDB3">MDB3</option>
+                    <option value="MDB4">MDB4</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- MDB1 Section -->
+    <section id="mdb1-section" class="mdb-section section section-alt" data-mdb="MDB1">
+        <div class="container">
+            <div class="mdb-section-header">
+                <div class="mdb-section-title">
+                    <h2>MDB1</h2>
+                    <span class="mdb-section-badge">Main Distribution Board</span>
+                </div>
+                <div class="mdb-section-stats">
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Estimate:</span>
+                        <span id="mdb1-estimate" class="mdb-stat-value">AED 0.00</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Load:</span>
+                        <span id="mdb1-load" class="mdb-stat-value">0.00 kW</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Items:</span>
+                        <span id="mdb1-items" class="mdb-stat-value">0</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Boards:</span>
+                        <span id="mdb1-boards-count" class="mdb-stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mdb1-boards" class="mdb-boards-container">
+                <!-- Boards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MDB2 Section -->
+    <section id="mdb2-section" class="mdb-section section" data-mdb="MDB2">
+        <div class="container">
+            <div class="mdb-section-header">
+                <div class="mdb-section-title">
+                    <h2>MDB2</h2>
+                    <span class="mdb-section-badge">Main Distribution Board</span>
+                </div>
+                <div class="mdb-section-stats">
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Estimate:</span>
+                        <span id="mdb2-estimate" class="mdb-stat-value">AED 0.00</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Load:</span>
+                        <span id="mdb2-load" class="mdb-stat-value">0.00 kW</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Items:</span>
+                        <span id="mdb2-items" class="mdb-stat-value">0</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Boards:</span>
+                        <span id="mdb2-boards-count" class="mdb-stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mdb2-boards" class="mdb-boards-container">
+                <!-- Boards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MDB3 Section -->
+    <section id="mdb3-section" class="mdb-section section section-alt" data-mdb="MDB3">
+        <div class="container">
+            <div class="mdb-section-header">
+                <div class="mdb-section-title">
+                    <h2>MDB3</h2>
+                    <span class="mdb-section-badge">Main Distribution Board</span>
+                </div>
+                <div class="mdb-section-stats">
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Estimate:</span>
+                        <span id="mdb3-estimate" class="mdb-stat-value">AED 0.00</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Load:</span>
+                        <span id="mdb3-load" class="mdb-stat-value">0.00 kW</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Items:</span>
+                        <span id="mdb3-items" class="mdb-stat-value">0</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Boards:</span>
+                        <span id="mdb3-boards-count" class="mdb-stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mdb3-boards" class="mdb-boards-container">
+                <!-- Boards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MDB4 Section -->
+    <section id="mdb4-section" class="mdb-section section" data-mdb="MDB4">
+        <div class="container">
+            <div class="mdb-section-header">
+                <div class="mdb-section-title">
+                    <h2>MDB4</h2>
+                    <span class="mdb-section-badge">Main Distribution Board</span>
+                </div>
+                <div class="mdb-section-stats">
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Estimate:</span>
+                        <span id="mdb4-estimate" class="mdb-stat-value">AED 0.00</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Load:</span>
+                        <span id="mdb4-load" class="mdb-stat-value">0.00 kW</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Items:</span>
+                        <span id="mdb4-items" class="mdb-stat-value">0</span>
+                    </div>
+                    <div class="mdb-section-stat">
+                        <span class="mdb-stat-label">Boards:</span>
+                        <span id="mdb4-boards-count" class="mdb-stat-value">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mdb4-boards" class="mdb-boards-container">
+                <!-- Boards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Technoplus Dubai</h3>
+                    <p>Energy Department</p>
+                    <p>Estimation Dashboard</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#mdb1-section">MDB1</a></li>
+                        <li><a href="#mdb2-section">MDB2</a></li>
+                        <li><a href="#mdb3-section">MDB3</a></li>
+                        <li><a href="#mdb4-section">MDB4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Project</h4>
+                    <p><strong>Silwa Tower</strong></p>
+                    <p>LV Panel Estimation</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Technoplus Dubai - Energy Department. All rights reserved.</p>
+                <p>Data extracted from e2.xlsx - TOTALLIST sheet</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Board Detail Modal -->
+    <div id="board-detail-modal" class="detail-modal" style="display: none;">
+        <div class="detail-modal-overlay"></div>
+        <div class="detail-modal-content">
+            <div class="detail-modal-header">
+                <h2 id="detail-board-name">Board Details</h2>
+                <button class="detail-close-btn" onclick="closeDetailModal()" aria-label="Close">×</button>
+            </div>
+            <div class="detail-modal-body">
+                <div id="detail-loading" class="detail-loading">Loading board details...</div>
+                <div id="detail-content" style="display: none;">
+                    <div id="detail-summary" class="detail-summary"></div>
+                    <div id="detail-items" class="detail-items"></div>
+                </div>
+                <div id="detail-error" class="detail-error" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="embed_data.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

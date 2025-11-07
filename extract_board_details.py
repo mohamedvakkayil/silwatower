@@ -1,6 +1,7 @@
 import openpyxl
 import json
 import sys
+import re
 
 def extract_board_details(board_name):
     """Extract detailed data from a specific board sheet."""
@@ -58,30 +59,59 @@ def extract_board_details(board_name):
                 details['items'].append(row_data)
         
         # Find summary values (NET TOTAL, NO OF UNITS, etc.)
-        for row_idx in range(max(1, ws.max_row - 30), ws.max_row + 1):
+        # Look for NET TOTAL and NO OF UNITS in the last 50 rows
+        for row_idx in range(max(1, ws.max_row - 50), ws.max_row + 1):
             row = ws[row_idx]
             for col_idx in range(min(6, ws.max_column)):
                 cell_value = row[col_idx].value
                 if cell_value and isinstance(cell_value, str):
-                    cell_upper = str(cell_value).upper()
-                    # Look for summary rows
-                    if 'NET TOTAL' in cell_upper or 'TOTAL' in cell_upper:
+                    cell_upper = str(cell_value).upper().strip()
+                    # Look for NET TOTAL (must be exact match or contain NET TOTAL)
+                    if 'NET TOTAL' in cell_upper and 'NET TOTAL' not in details['summary']:
                         # Try to get the value from amount column (usually column F, index 5)
-                        if ws.max_column > 5:
-                            amount_value = ws.cell(row_idx, 6).value
-                            if amount_value is not None:
-                                try:
-                                    details['summary']['net_total'] = float(amount_value)
-                                except (ValueError, TypeError):
-                                    pass
-                    elif 'NO OF UNITS' in cell_upper or 'NO OF ITEMS' in cell_upper:
-                        if ws.max_column > 5:
-                            units_value = ws.cell(row_idx, 6).value
-                            if units_value is not None:
-                                try:
-                                    details['summary']['no_of_units'] = float(units_value)
-                                except (ValueError, TypeError):
-                                    pass
+                        # Also check adjacent columns in case structure varies
+                        for check_col in [6, 5, 7, 4]:
+                            if ws.max_column >= check_col:
+                                amount_value = ws.cell(row_idx, check_col).value
+                                if amount_value is not None:
+                                    try:
+                                        # Try to extract number from string if needed
+                                        if isinstance(amount_value, str):
+                                            # Extract numeric part (remove text like "kVAR", "kW", etc.)
+                                            num_match = re.search(r'[\d,]+\.?\d*', amount_value.replace(',', ''))
+                                            if num_match:
+                                                amount_value = float(num_match.group())
+                                            else:
+                                                continue
+                                        else:
+                                            amount_value = float(amount_value)
+                                        details['summary']['net_total'] = amount_value
+                                        break
+                                    except (ValueError, TypeError):
+                                        continue
+                    # Look for NO OF UNITS (must be exact match)
+                    elif ('NO OF UNITS' in cell_upper or 'NO OF ITEMS' in cell_upper) and 'no_of_units' not in details['summary']:
+                        # Try to get the value from amount column (usually column F, index 5)
+                        # Also check adjacent columns in case structure varies
+                        for check_col in [6, 5, 7, 4]:
+                            if ws.max_column >= check_col:
+                                units_value = ws.cell(row_idx, check_col).value
+                                if units_value is not None:
+                                    try:
+                                        # Try to extract number from string if needed
+                                        if isinstance(units_value, str):
+                                            # Extract numeric part (remove text)
+                                            num_match = re.search(r'[\d,]+\.?\d*', units_value.replace(',', ''))
+                                            if num_match:
+                                                units_value = float(num_match.group())
+                                            else:
+                                                continue
+                                        else:
+                                            units_value = float(units_value)
+                                        details['summary']['no_of_units'] = units_value
+                                        break
+                                    except (ValueError, TypeError):
+                                        continue
         
         return details
         

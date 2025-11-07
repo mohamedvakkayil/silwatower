@@ -2,6 +2,7 @@ from flask import Flask, send_from_directory, jsonify
 from flask_cors import CORS
 import openpyxl
 import os
+import re
 from datetime import datetime
 from collections import OrderedDict
 
@@ -183,11 +184,25 @@ def board_details():
                     smdb = ws_totallist.cell(row_idx, 4).value  # Column D (SMDB)
                     load = ws_totallist.cell(row_idx, 6).value # Column F (Load)
                     
+                    # Parse load value safely (handle strings with units like "300.00 kVAR" or "100.5 kW")
+                    load_value = None
+                    if load is not None:
+                        try:
+                            if isinstance(load, str):
+                                # Extract numeric part from string (remove units like "kW", "kVAR", etc.)
+                                num_match = re.search(r'[\d,]+\.?\d*', load.replace(',', ''))
+                                if num_match:
+                                    load_value = float(num_match.group())
+                            else:
+                                load_value = float(load)
+                        except (ValueError, TypeError):
+                            load_value = None
+                    
                     board_metadata = {
                         'kind': str(kind).strip() if kind else None,
                         'mdb': str(mdb).strip() if mdb else None,
                         'smdb': str(smdb).strip() if smdb else None,
-                        'load': float(load.replace('kW', '').strip()) if load and isinstance(load, str) else (float(load) if load else None)
+                        'load': load_value
                     }
                     break
         
@@ -280,16 +295,50 @@ def board_details():
         
         # Find summary data (NET TOTAL, NO OF UNITS)
         summary = {}
-        for row_idx in range(ws.max_row - 20, ws.max_row + 1):
+        for row_idx in range(max(1, ws.max_row - 50), ws.max_row + 1):
             row = ws[row_idx]
             if len(row) > 2 and row[2].value:
-                item_str = str(row[2].value).upper()
-                if 'NET TOTAL' in item_str:
-                    if len(row) > 5:
-                        summary['net_total'] = row[5].value
-                elif 'NO OF UNITS' in item_str:
-                    if len(row) > 5:
-                        summary['no_of_units'] = row[5].value
+                item_str = str(row[2].value).upper().strip()
+                if 'NET TOTAL' in item_str and 'net_total' not in summary:
+                    # Try multiple columns to find the value
+                    for check_col in [5, 4, 6, 3]:
+                        if len(row) > check_col:
+                            value = row[check_col].value
+                            if value is not None:
+                                try:
+                                    # Handle string values with units (e.g., "300.00 kVAR")
+                                    if isinstance(value, str):
+                                        num_match = re.search(r'[\d,]+\.?\d*', value.replace(',', ''))
+                                        if num_match:
+                                            value = float(num_match.group())
+                                        else:
+                                            continue
+                                    else:
+                                        value = float(value)
+                                    summary['net_total'] = value
+                                    break
+                                except (ValueError, TypeError):
+                                    continue
+                elif ('NO OF UNITS' in item_str or 'NO OF ITEMS' in item_str) and 'no_of_units' not in summary:
+                    # Try multiple columns to find the value
+                    for check_col in [5, 4, 6, 3]:
+                        if len(row) > check_col:
+                            value = row[check_col].value
+                            if value is not None:
+                                try:
+                                    # Handle string values with units
+                                    if isinstance(value, str):
+                                        num_match = re.search(r'[\d,]+\.?\d*', value.replace(',', ''))
+                                        if num_match:
+                                            value = float(num_match.group())
+                                        else:
+                                            continue
+                                    else:
+                                        value = float(value)
+                                    summary['no_of_units'] = value
+                                    break
+                                except (ValueError, TypeError):
+                                    continue
         
         # Convert OrderedDict items to regular dicts (Python 3.7+ preserves order)
         # But keep the order by ensuring we serialize in the right order

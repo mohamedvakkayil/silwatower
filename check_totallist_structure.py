@@ -49,3 +49,4 @@ if __name__ == '__main__':
     check_totallist_structure()
 
 
+
